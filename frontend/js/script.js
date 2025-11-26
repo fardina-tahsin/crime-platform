@@ -1,4 +1,4 @@
-// Crime Feed functionality
+// src/js/feed.js
 const crimeFeed = document.getElementById("crimeFeed");
 
 // Sample data
@@ -24,16 +24,14 @@ const reports = [
 ];
 
 // Render reports
-if (crimeFeed) {
-    reports.forEach(report => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-            <img src="${report.image}" alt="${report.title}" onerror="this.style.display='none'">
-            <h3>${report.title}</h3>
-            <p><i class="fa fa-map-marker-alt"></i> ${report.location}</p>
-            <p><i class="fa fa-calendar"></i> ${report.date}</p>
-        `;
-        crimeFeed.appendChild(card);
-    });
-}
+reports.forEach(report => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+        <img src="${report.image}" alt="${report.title}">
+        <h3>${report.title}</h3>
+        <p><i class="fa fa-map-marker-alt"></i> ${report.location}</p>
+        <p><i class="fa fa-calendar"></i> ${report.date}</p>
+    `;
+    crimeFeed.appendChild(card);
+});
