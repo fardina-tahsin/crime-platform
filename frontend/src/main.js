@@ -1,7 +1,7 @@
 import './style.css'
 
 // Load home.html content into #app
-fetch('/src/home.html')
+fetch('../home.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('app').innerHTML = html;
