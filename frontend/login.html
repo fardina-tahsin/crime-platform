@@ -10,8 +10,23 @@
     <link rel="stylesheet" href="./css/authentication.css">
 </head>
 
-
 <body>
+    <div class="card wide">
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" data-target="login-section">Login</button>
+            <button class="tab-btn" data-target="signup-section">Sign Up</button>
+        </div>
+    </div>
+    <header>
+        <h1>Crime Reporting Platform</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="feed.html">Crime Feed</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
     <!-- Loading State -->
     <div id="loading-state">
         <p>Loading...</p>
@@ -58,6 +73,22 @@
                 <br />
                 <button type="submit">Update Password</button>
                 <button type="button" id="cancel-change-password">Cancel</button>
+                <input type="password" id="current-password" required/>
+                <br/>
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" required/>
+                <br/>
+                <button type="submit">Update Password</button>
+                <button type="button" id="cancel-change-password">Cancel</button>
+
+        <!-- Signup Section -->
+        <div id="signup-section" class="auth-section">
+            <form id="signup-form">
+                <h2>Create Account</h2>
+                <input type="text" id="signup-name" placeholder="Full Name" required />
+                <input type="email" id="signup-email" placeholder="Email" required />
+                <input type="password" id="signup-password" placeholder="Password" required />
+                <button type="submit" class="btn primary">Register</button>
             </form>
 
             <div class="divider"><span>or</span></div>
@@ -82,3 +113,7 @@
 </body>
 
 </html>
+<<<<<<< HEAD
+=======
+</div>
+>>>>>>> 38b71f67f2065331bb1d8b4fc8b4367e7176e8b4
