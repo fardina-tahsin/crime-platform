@@ -95,7 +95,12 @@ function updateUI(user) {
 // Auth state listener
 onAuthStateChanged(auth, (user) => {
     currentUser = user;
-    updateUI(user);
+    if (user) {
+        // Redirect to home page when logged in
+        window.location.href = '../index.html';
+    } else {
+        updateUI(user);
+    }
 });
 
 // Email Signup
