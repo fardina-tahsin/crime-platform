@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Crime Reporting Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Crime Reporting Platform</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="feed.html">Crime Feed</a>
+            <a href="report-crime.html">Report Crime</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="edit-profile-section">
+        <h2>Edit Profile</h2>
+
+        <div class="edit-card">
+            <label for="newProfileImage">Profile Image</label>
+            <input type="file" id="newProfileImage" accept="image/*">
+
+            <label for="bio">Bio</label>
+            <textarea id="bio" placeholder="Tell something about yourself..."></textarea>
+
+            <label for="contact">Contact Info (optional)</label>
+            <input type="text" id="contact" placeholder="Email or phone number">
+
+            <button id="saveBtn"><i class="fa fa-save"></i> Save</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Crime Reporting Platform</p>
+    </footer>
+
+    <script type="module" src="src/js/editProfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Crime Reporting Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Crime Reporting Platform</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="feed.html">Crime Feed</a>
+            <a href="report-crime.html">Report Crime</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-card">
+            <img id="profileImage" src="images/default.png" alt="Profile Picture" class="profile-img">
+            <h2 id="userEmail">User Email</h2>
+            <p id="userPhone">Phone Number</p>
+            <p id="userBio">Bio: Not added yet</p>
+            <p id="userContact">Contact: Not added yet</p>
+            <button onclick="location.href='edit-profile.html'"><i class="fa fa-edit"></i> Edit Profile</button>
+        </div>
+
+        <h3>Your Crime Reports</h3>
+        <div class="grid-container" id="reportsList">
+            <!-- User's crime reports will appear here dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Crime Reporting Platform</p>
+    </footer>
+
+    <script type="module" src="src/js/profile.js"></script>
+</body>
+</html>
